@@ -23,8 +23,10 @@ header {
 
 /*Menu*/
 .navigation-area {
-    
     background-color: pink;
+    align-items: center;
+    height: 100%;
+
 
 }
 nav {
@@ -32,17 +34,18 @@ nav {
 }
 .menu {
     list-style-type: none;
-    color: white;
 }
 .menu li {
     padding: 0 10px;
 }
 .menu li a {
     text-decoration: none;
+    color: white;
 
 }
 /*Logo*/
 .logo {
+    justify-content: center;
     width: 60%;
 }
 .logo img {
@@ -52,4 +55,8 @@ nav {
 /* Profile */
 .profile {
     width: 30%;
+    color: white;
+    justify-content: right;
+
+    
 }
