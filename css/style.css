@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
 /*COMMON*/
 .container {
     width: 80%;
@@ -13,21 +17,28 @@
 .flex-container {
     display: flex;
 }
+img {
+    width: 100%;
+}
 
 /*HEADER*/
 header {
     background-color: #ff6900;
+    width: 100%;
     height: 50px;
-
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+main {
+    margin-top: 50px;
 }
 
 /*Menu*/
 .navigation-area {
-    background-color: pink;
     align-items: center;
-    height: 100%;
-
-
+    height: 50px;
 }
 nav {
     width: 30%;
@@ -36,12 +47,11 @@ nav {
     list-style-type: none;
 }
 .menu li {
-    padding: 0 10px;
+    padding-right: 10px;
 }
 .menu li a {
     text-decoration: none;
     color: white;
-
 }
 /*Logo*/
 .logo {
@@ -49,14 +59,123 @@ nav {
     width: 60%;
 }
 .logo img {
-    height: 30px;
-
+    width: 100px;
 }
 /* Profile */
 .profile {
     width: 30%;
     color: white;
-    justify-content: right;
+    justify-content: right;   
+}
 
-    
+/*MAIN*/
+.col {
+    width: calc( 100% / 3 );
+    padding: 30px 10px;
+}
+.product-list {
+    padding: 25px 0;
+    flex-wrap: wrap;
+}
+
+/*Product*/
+.img-product {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+.img-product-b {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.img-product:hover .img-product-b {
+    display: inline;
+
+}
+/*heart*/
+.heart {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: 5;
+}
+/*tag*/
+.tag-product {
+    display: inline-block;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    z-index: 5;
+}
+.tag {
+    padding: 2px 5px;
+    color: white;
+    font-weight: 800;
+}
+.tag-discount {
+    background-color: red;
+}
+.tag-green {
+    background-color: green;
+}
+/*product text*/
+.model-product {
+    font-size:13px;
+}
+.title-product {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.price-product {
+    font-size: 14px;
+}
+.discount-price {
+    color: red;
+    font-weight: 800;
+}
+.price {
+    text-decoration: line-through;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    height: 60px;
+}
+.footer-main {
+    width: 100%;
+    height: 60px;
+    align-items: center;
+}
+footer h4 {
+    font-size: 12px;
+}
+.footer-menu li a {
+    font-size: 12px;
+}
+.brand-main {
+    width: 90%;   
+}
+.social {
+    width: 10%;
+}
+.icon-social {
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    padding: 3px;
+    border-radius: 3px;
+    font-size: 10px;
+    color: #1a1a1a;  
 }
